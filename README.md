@@ -8,7 +8,7 @@ This package provides some useful quality-of-life tools making teaching with jup
 You can install directly from GitHub:
 
 ```bash
-pip install git+https://github.com/yourusername/mypackage.git
+pip install git+https://github.com/SimeonDenisPoisson/ipynb_for_teaching.git
 ```
 
 ## Usage

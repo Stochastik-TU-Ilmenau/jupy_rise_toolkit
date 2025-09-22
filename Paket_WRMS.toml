@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Paket_WRMS"               # replace with your package name
+version = "0.1.0"                # start small, bump later
+description = "This package provides some hepler function for using juypter notebooks in teaching."
+readme = "README.md"
+license = { text = "MIT" }       # or another license
+authors = [
+  { name = "Tobias Bernstein", email = "tobias.bernstein@tu-ilmenau.de" },
+  { name = "Thomas Hotz", email = "thomas.hotz@tu-ilmenau.de" }
+]
+dependencies = [
+  "numpy >=1.26.4",
+  "natsort >=8.4.0",
+  "pypdf >=4.1.0",
+  "qrcode >=8.1",
+  "requests >=2.31.0",
+  "panads >=2.1.4"
+]
+
+requires-python = ">=3.11"
+
+[tool.setuptools.packages.find]
+where = ["Paket_WRMS"]

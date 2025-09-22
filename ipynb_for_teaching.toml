@@ -3,7 +3,7 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "Paket_WRMS"               # replace with your package name
+name = "ipynb_for_teaching"               # replace with your package name
 version = "0.1.0"                # start small, bump later
 description = "This package provides some hepler function for using juypter notebooks in teaching."
 readme = "README.md"
@@ -24,4 +24,4 @@ dependencies = [
 requires-python = ">=3.11"
 
 [tool.setuptools.packages.find]
-where = ["Paket_WRMS"]
+where = ["ipynb_for_teaching"]

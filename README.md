@@ -1,4 +1,4 @@
-# ipynb_for_teaching
+# jupy_rise_toolkit
 
 This package provides some useful quality-of-life tools making teaching with jupyter nootbook and RISE easier.
 

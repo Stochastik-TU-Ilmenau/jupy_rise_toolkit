@@ -3,16 +3,19 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "ipynb_for_teaching"               # replace with your package name
-version = "0.1.0"                # start small, bump later
+name = "jupy_rise_toolkit"              
+version = "0.1.0"                
 description = "This package provides some hepler function for using juypter notebooks in teaching."
 readme = "README.md"
-license = { text = "MIT" }       # or another license
+license = { text = "MIT" }      
 authors = [
   { name = "Tobias Bernstein", email = "tobias.bernstein@tu-ilmenau.de" },
   { name = "Thomas Hotz", email = "thomas.hotz@tu-ilmenau.de" }
 ]
 dependencies = [
+  "nbformat >= 5.9.2",
+  "notebook >= 6.4.12",
+  "nbconvert >= 7.16.4",
   "numpy >=1.26.4",
   "natsort >=8.4.0",
   "pypdf >=4.1.0",
@@ -24,4 +27,4 @@ dependencies = [
 requires-python = ">=3.11"
 
 [tool.setuptools.packages.find]
-where = ["ipynb_for_teaching"]
+where = ["jupy_rise_toolkit"]

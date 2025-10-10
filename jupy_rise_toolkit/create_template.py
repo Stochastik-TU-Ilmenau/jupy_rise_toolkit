@@ -1,12 +1,18 @@
 import os
+import sys
 import nbformat
 
 def create_template(
         author: str = 'Author',
         title: str = 'Titel',
-        date: str = '', 
-        path: str = '',
+        date: str = None, 
+        path: str = None,
         filename: str = 'my_notebook' ):
+    
+    # default behavoir: use path of script that is calling the function
+    if path == None:
+          
+        path = os.path.abspath(sys.argv[0])
     
     # create new notebook
     nb = nbformat.v4.new_notebook() 

@@ -1,12 +1,13 @@
 import qrcode
+from IPython.display import display
 
-def show_QR_code( data: str ) -> None:
+def show_QR_code( data: str, size: int = 10 ) -> None:
 
     # Generate QR code
     qr = qrcode.QRCode(
         version=1,
         error_correction=qrcode.constants.ERROR_CORRECT_L,
-        box_size=10,
+        box_size=size,
         border=4,
     )
     qr.add_data(data)
@@ -14,7 +15,7 @@ def show_QR_code( data: str ) -> None:
 
     # Create and show image
     img = qr.make_image(fill="black", back_color="white")
-    img.show()
+    display(img)
 
     return None
 

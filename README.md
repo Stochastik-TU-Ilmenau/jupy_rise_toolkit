@@ -24,7 +24,7 @@ pip install git+https://github.com/Stochastik-TU-Ilmenau/jupy_rise_toolkit.git
 - pypdf >=4.1.0
 - qrcode >=8.1
 - requests >=2.31.0
-- panads >=2.1.4
+- pandas >=2.1.4
 
 ## License
 

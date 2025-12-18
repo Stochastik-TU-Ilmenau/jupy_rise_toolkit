@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "jupy_rise_toolkit"              
-version = "1.1.0"                
+version = "1.1.2"                
 description = "This package provides some hepler function for using juypter notebooks in teaching."
 readme = "README.md"
 license = { text = "MIT" }      

@@ -1,0 +1,10 @@
+nbformat>=5.9.2
+notebook<7.0,>=6.4.12
+nbconvert>=7.16.4
+IPython>=8.17.2
+numpy>=1.26.4
+natsort>=8.4.0
+pypdf>=4.1.0
+qrcode>=8.1
+requests>=2.31.0
+pandas>=2.1.4

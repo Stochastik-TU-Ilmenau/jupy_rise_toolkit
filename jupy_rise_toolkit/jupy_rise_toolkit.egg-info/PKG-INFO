@@ -1,3 +1,26 @@
+Metadata-Version: 2.4
+Name: jupy_rise_toolkit
+Version: 1.1.0
+Summary: This package provides some hepler function for using juypter notebooks in teaching.
+Author-email: Tobias Bernstein <tobias.bernstein@tu-ilmenau.de>, Thomas Hotz <thomas.hotz@tu-ilmenau.de>
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: nbformat>=5.9.2
+Requires-Dist: notebook<7.0,>=6.4.12
+Requires-Dist: nbconvert>=7.16.4
+Requires-Dist: IPython>=8.17.2
+Requires-Dist: numpy>=1.26.4
+Requires-Dist: natsort>=8.4.0
+Requires-Dist: pypdf>=4.1.0
+Requires-Dist: qrcode>=8.1
+Requires-Dist: requests>=2.31.0
+Requires-Dist: pandas>=2.1.4
+Dynamic: license-file
+
 # jupy_rise_toolkit
 
 This package provides some useful quality-of-life tools making teaching with jupyter nootbook and RISE easier.
@@ -8,7 +31,8 @@ This package provides some useful quality-of-life tools making teaching with jup
 Installation from [Test PyPi](https://test.pypi.org/):
 
 ```bash
-pip install -i https://test.pypi.org/simple/ jupy-rise-toolkit==1.1.2```
+pip install -i https://test.pypi.org/simple/ jupy_rise_toolkit
+```
 
 You can also install directly from GitHub:
 

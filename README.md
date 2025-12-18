@@ -5,7 +5,13 @@ This package provides some useful quality-of-life tools making teaching with jup
 
 ## Installation
 
-You can install directly from GitHub:
+Installation from [Test PyPi](https://test.pypi.org/):
+
+```bash
+pip install -i https://test.pypi.org/simple/ jupy_rise_toolkit
+```
+
+You can also install directly from GitHub:
 
 ```bash
 pip install git+https://github.com/Stochastik-TU-Ilmenau/jupy_rise_toolkit.git
@@ -13,12 +19,63 @@ pip install git+https://github.com/Stochastik-TU-Ilmenau/jupy_rise_toolkit.git
 
 ## Usage
 
+### Hiding input of code cells in presentation
+
+Execute `jupy_rise_toolkit.hide()` in a code cell to hide its input in presentation.
+
+### Generating a template
+
+We recommend using a `.css` file in the notebook's directory to set up a custom theme, as styling commands from the notebook might impact styling outside the presentation. However, the `create_template()` can be used to get a ready-to-use template. Executing
+>create_template( author: str = 'Author', \
+>        title: str = 'Titel', \
+>        institution: str = 'Institution', \
+>        date: str = 'DD MM YYYY', \
+>        filename: str = 'my_notebook' )
+
+will create a template file. The notebook automatically gets a footer with the jupyter logo ([source](https://github.com/jupyter/jupyter.github.io/blob/master/assets/share.png); image and license are included in the pacakge data).
+
+### Generating a PDF
+
+Our pakcage offers two ways to obtain a PDF from a directory with at least one jupyter notebook.
+
+We recommend executing the script from console:
+
+>python -m jupy_rise_toolkit.ipynb2pdf
+
+By default, this generates `html` files for all `ipynb.` files in current directory and prints them to `PDF` via [chromium](https://www.chromium.org/chromium-projects/).
+
+Additional parameters are:
+
+| parameter    | description |
+| -------- | ------- |
+| -no-input  | hide input cells with python code (displayed by default) |
+| -hide-tag |   remove all input cells with cell tag `hide` (overwrites -no-input)                |
+| -ex    |  re-execute notebooks (off by default; necessary for correct display of widgets)  |
+| -no-overwrite | only convert notebooks that are not already converted                         (by default all notebooks are converted overwriting already existing files) |
+
+We also provide a version that can be executed inside the notebook. However, on `Windows`, calling chromium from notebooks causes an error; hence, this function can currently only be used on `Linux`.
+
+The function `ipynb2pdf_from_nb` first copies the current notebook (with all cells containing said funtion removed) and then executes the script above.
+
+### Setting up a survey with live analysis
+
+To create a survey with possible live analysis (e.g., for a quizzes in classes), follow these steps:
+
+1. Create a publicly available file in which the survey's answers are stored. This is possible with Google; we use the cloud infrastructure of our university.
+2. Generate a download link for the file above. Often, adding `/download` to its weblink suffices.
+3. Use `show_QR_code()` to show the link to the survey as a QR-code.
+4. Download the file with `Pandas`.
+
 ## Dependencies
 
-- nbformat >= 5.9.2
-- notebook >= 6.4.12
-- nbconvert >= 7.16.4
-- IPython >= 8.17.2
+The package requires `python >= 3.9`.
+
+The functions are written for classical jupyter notebook (version `6.4.8` was used during developement). Make sure to use a former version of `traitlets` (we use version `5.9.0`), as the current version is incompatible with said notebook versions. Regarding RISE, we used version `5.7.1`.
+
+- nbformat >=5.9.2
+- notebook >=6.4.12, <7.0
+- nbconvert >=7.16.4
+- IPython >=8.17.2
 - numpy >=1.26.4
 - natsort >=8.4.0
 - pypdf >=4.1.0

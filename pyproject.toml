@@ -14,7 +14,7 @@ authors = [
 ]
 dependencies = [
   "nbformat >= 5.9.2",
-  "notebook >= 6.4.12",
+  "notebook >= 6.4.12, <7.0",
   "nbconvert >= 7.16.4",
   "IPython >= 8.17.2",
   "numpy >=1.26.4",
@@ -24,7 +24,7 @@ dependencies = [
   "requests >=2.31.0",
   "pandas >=2.1.4"
 ]
-requires-python = ">=3.11"
+requires-python = ">=3.9"
 classifiers = [
     "Programming Language :: Python :: 3",
     "Operating System :: OS Independent",

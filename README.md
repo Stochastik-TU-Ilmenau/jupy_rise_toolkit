@@ -8,7 +8,8 @@ This package provides some useful quality-of-life tools making teaching with jup
 Installation from [Test PyPi](https://test.pypi.org/):
 
 ```bash
-pip install -i https://test.pypi.org/simple/ jupy-rise-toolkit==1.1.2```
+pip install -i https://test.pypi.org/simple/ jupy-rise-toolkit==1.1.2
+```
 
 You can also install directly from GitHub:
 

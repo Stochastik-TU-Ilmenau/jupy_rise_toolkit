@@ -36,7 +36,7 @@ will create a template file. The notebook automatically gets a footer with the j
 
 ### Generating a PDF
 
-Our pakcage offers two ways to obtain a PDF from a directory with at least one jupyter notebook.
+Our pakcage offers two ways to obtain a PDF from a directory with at least one jupyter notebook. This is based on work from [Matthias Glock](https://github.com/matthias-g-) and modified code from [playwright](https://playwright.dev/python/).
 
 We recommend executing the script from console:
 
@@ -56,6 +56,8 @@ Additional parameters are:
 We also provide a version that can be executed inside the notebook. However, on `Windows`, calling chromium from notebooks causes an error; hence, this function can currently only be used on `Linux`.
 
 The function `ipynb2pdf_from_nb` first copies the current notebook (with all cells containing said funtion removed) and then executes the script above.
+
+Using `nbconvert` from notebok works, but does not allow specifying PDF parameters.
 
 ### Setting up a survey with live analysis
 

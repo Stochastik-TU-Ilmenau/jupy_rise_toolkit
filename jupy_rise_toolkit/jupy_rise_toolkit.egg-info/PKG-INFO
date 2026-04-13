@@ -1,6 +1,6 @@
 Metadata-Version: 2.4
 Name: jupy_rise_toolkit
-Version: 1.1.0
+Version: 1.1.2
 Summary: This package provides some hepler function for using juypter notebooks in teaching.
 Author-email: Tobias Bernstein <tobias.bernstein@tu-ilmenau.de>, Thomas Hotz <thomas.hotz@tu-ilmenau.de>
 License: MIT
@@ -31,7 +31,7 @@ This package provides some useful quality-of-life tools making teaching with jup
 Installation from [Test PyPi](https://test.pypi.org/):
 
 ```bash
-pip install -i https://test.pypi.org/simple/ jupy_rise_toolkit
+pip install -i https://test.pypi.org/simple/ jupy-rise-toolkit==1.1.2
 ```
 
 You can also install directly from GitHub:

@@ -1,6 +1,6 @@
 Metadata-Version: 2.4
 Name: jupy_rise_toolkit
-Version: 1.1.2
+Version: 1.1.3
 Summary: This package provides some hepler function for using juypter notebooks in teaching.
 Author-email: Tobias Bernstein <tobias.bernstein@tu-ilmenau.de>, Thomas Hotz <thomas.hotz@tu-ilmenau.de>
 License: MIT
@@ -13,6 +13,8 @@ Requires-Dist: nbformat>=5.9.2
 Requires-Dist: notebook<7.0,>=6.4.12
 Requires-Dist: nbconvert>=7.16.4
 Requires-Dist: IPython>=8.17.2
+Requires-Dist: traitlets==5.9.0
+Requires-Dist: setuptools==82.0.1
 Requires-Dist: numpy>=1.26.4
 Requires-Dist: natsort>=8.4.0
 Requires-Dist: pypdf>=4.1.0
@@ -24,14 +26,14 @@ Dynamic: license-file
 # jupy_rise_toolkit
 
 This package provides some useful quality-of-life tools making teaching with jupyter nootbook and RISE easier.
-
+Note that we rely on the [Classical Jupyter Notebook](https://docs.jupyter.org/en/latest/install/notebook-classic.html) and [RISE](https://rise.readthedocs.io/). More recent versions of `notebook`, `traitlets`, and `setuptools` break this setup.
 
 ## Installation
 
 Installation from [Test PyPi](https://test.pypi.org/):
 
 ```bash
-pip install -i https://test.pypi.org/simple/ jupy-rise-toolkit==1.1.2
+pip install -i https://test.pypi.org/simple/ jupy-rise-toolkit==1.1.3
 ```
 
 You can also install directly from GitHub:
@@ -101,6 +103,8 @@ The functions are written for classical jupyter notebook (version `6.4.8` was us
 - notebook >=6.4.12, <7.0
 - nbconvert >=7.16.4
 - IPython >=8.17.2
+- traitlets == 5.9.0
+- setuptools == 82.0.1
 - numpy >=1.26.4
 - natsort >=8.4.0
 - pypdf >=4.1.0

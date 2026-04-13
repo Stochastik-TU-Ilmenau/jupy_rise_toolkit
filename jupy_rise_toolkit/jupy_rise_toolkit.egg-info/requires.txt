@@ -2,6 +2,8 @@ nbformat>=5.9.2
 notebook<7.0,>=6.4.12
 nbconvert>=7.16.4
 IPython>=8.17.2
+traitlets==5.9.0
+setuptools==82.0.1
 numpy>=1.26.4
 natsort>=8.4.0
 pypdf>=4.1.0

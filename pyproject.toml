@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "jupy_rise_toolkit"              
-version = "1.1.2"                
+version = "1.1.3"                
 description = "This package provides some hepler function for using juypter notebooks in teaching."
 readme = "README.md"
 license = { text = "MIT" }      
@@ -17,6 +17,8 @@ dependencies = [
   "notebook >= 6.4.12, <7.0",
   "nbconvert >= 7.16.4",
   "IPython >= 8.17.2",
+  "traitlets == 5.9.0",
+  "setuptools == 82.0.1",
   "numpy >=1.26.4",
   "natsort >=8.4.0",
   "pypdf >=4.1.0",

@@ -1,14 +1,14 @@
 # jupy_rise_toolkit
 
 This package provides some useful quality-of-life tools making teaching with jupyter nootbook and RISE easier.
-
+Note that we rely on the [Classical Jupyter Notebook](https://docs.jupyter.org/en/latest/install/notebook-classic.html) and [RISE](https://rise.readthedocs.io/). More recent versions of `notebook`, `traitlets`, and `setuptools` break this setup.
 
 ## Installation
 
 Installation from [Test PyPi](https://test.pypi.org/):
 
 ```bash
-pip install -i https://test.pypi.org/simple/ jupy-rise-toolkit==1.1.2
+pip install -i https://test.pypi.org/simple/ jupy-rise-toolkit==1.1.3
 ```
 
 You can also install directly from GitHub:
@@ -78,6 +78,8 @@ The functions are written for classical jupyter notebook (version `6.4.8` was us
 - notebook >=6.4.12, <7.0
 - nbconvert >=7.16.4
 - IPython >=8.17.2
+- traitlets == 5.9.0
+- setuptools == 82.0.1
 - numpy >=1.26.4
 - natsort >=8.4.0
 - pypdf >=4.1.0
